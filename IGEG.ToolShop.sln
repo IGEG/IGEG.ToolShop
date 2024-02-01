@@ -1,0 +1,44 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.8.34309.116
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{C2B31038-FE20-4B00-A769-8CF88ADF9E9A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Src", "Src", "{1C23BC76-9121-42F4-AE08-AA5E9E9B4F7A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "UI", "UI", "{2CF20C76-786D-4984-8E7B-29B5D939F6E4}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infrastructure", "Infrastructure", "{DF89B8F0-EF84-4478-A7ED-D259EC15FC7C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Core", "Core", "{F3DF8E54-EC3F-40B6-A6FD-E620AB2CAC2A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "API", "API", "{7DDFA7DC-B268-4F82-B9FF-DA9BAE690E6E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IGEG.ToolShop.Domain", "Domain\IGEG.ToolShop.Domain.csproj", "{4BEAE649-74F9-49BA-9390-2D30352DFB23}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4BEAE649-74F9-49BA-9390-2D30352DFB23}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4BEAE649-74F9-49BA-9390-2D30352DFB23}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4BEAE649-74F9-49BA-9390-2D30352DFB23}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4BEAE649-74F9-49BA-9390-2D30352DFB23}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{2CF20C76-786D-4984-8E7B-29B5D939F6E4} = {1C23BC76-9121-42F4-AE08-AA5E9E9B4F7A}
+		{DF89B8F0-EF84-4478-A7ED-D259EC15FC7C} = {1C23BC76-9121-42F4-AE08-AA5E9E9B4F7A}
+		{F3DF8E54-EC3F-40B6-A6FD-E620AB2CAC2A} = {1C23BC76-9121-42F4-AE08-AA5E9E9B4F7A}
+		{7DDFA7DC-B268-4F82-B9FF-DA9BAE690E6E} = {1C23BC76-9121-42F4-AE08-AA5E9E9B4F7A}
+		{4BEAE649-74F9-49BA-9390-2D30352DFB23} = {F3DF8E54-EC3F-40B6-A6FD-E620AB2CAC2A}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D0AE392E-1600-49B2-B5A5-AE5272C3ACB8}
+	EndGlobalSection
+EndGlobal
