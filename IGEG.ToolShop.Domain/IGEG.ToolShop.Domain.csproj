@@ -6,8 +6,4 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
-  <ItemGroup>
-    <ProjectReference Include="..\IGEG.ToolShop.Domain\IGEG.ToolShop.Domain.csproj" />
-  </ItemGroup>
-
 </Project>
