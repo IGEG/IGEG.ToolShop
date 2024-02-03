@@ -1,4 +1,6 @@
 ﻿using AutoMapper;
+using IGEG.ToolShop.Application.Features.Category.Queries.GetAllCategories;
+using IGEG.ToolShop.Application.Features.Product.Queries.GetAllProducts;
 using IGEG.ToolShop.Domain.Entities;
 
 namespace IGEG.ToolShop.Application.MappingProfile
@@ -9,8 +11,6 @@ namespace IGEG.ToolShop.Application.MappingProfile
         {
             CreateMap<Product, ProductDto>().ReverseMap();
             CreateMap<Category, CategoryDto>().ReverseMap();
-            CreateMap<ProductModel, ProductModelDto>().ReverseMap();
-            CreateMap<ProductOption, ProductOptionDto>().ReverseMap();
         }
     }
 }

@@ -16,4 +16,11 @@
     <ProjectReference Include="..\IGEG.ToolShop.Domain\IGEG.ToolShop.Domain.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Features\Category\Commands\" />
+    <Folder Include="Features\ProductModel\Commands\" />
+    <Folder Include="Features\ProductOption\Commands\" />
+    <Folder Include="Features\Product\Commands\" />
+  </ItemGroup>
+
 </Project>
