@@ -1,7 +1,4 @@
-﻿using IGEG.ToolShop.Application.Features.Category.Queries.GetAllCategories;
-using IGEG.ToolShop.Application.Features.ProductModel.Queries.GetAllProductModel;
-
-namespace IGEG.ToolShop.Application.Features.Product.Queries.GetAllProducts
+﻿namespace IGEG.ToolShop.Application.Dtos
 {
     public class ProductDto
     {
@@ -17,7 +14,7 @@ namespace IGEG.ToolShop.Application.Features.Product.Queries.GetAllProducts
         public int? Volume { get; set; }
         public bool IsOpen { get; set; }
         public bool IsClose { get; set; }
-        public DateTime DateOfSaller { get; set; } 
+        public DateTime DateOfSaller { get; set; }
         public DateTime? DateOfUpdate { get; set; }
         public List<ProductModelDto> ProductModels { get; set; } = new List<ProductModelDto>();
         public int Views { get; set; }

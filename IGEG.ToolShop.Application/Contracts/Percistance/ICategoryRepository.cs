@@ -5,6 +5,6 @@ namespace IGEG.ToolShop.Application.Contracts.Percistance
 {
     public interface ICategoryRepository : IRepository<Category>
     {
-
+        Task<Category> GetCategoryByUrlAsync(string url);
     }
 }

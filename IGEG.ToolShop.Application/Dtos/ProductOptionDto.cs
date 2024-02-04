@@ -1,5 +1,4 @@
-﻿
-namespace IGEG.ToolShop.Application.Features.ProductOption.Queries.GetAllProductOptions
+﻿namespace IGEG.ToolShop.Application.Dtos
 {
     public class ProductOptionDto
     {

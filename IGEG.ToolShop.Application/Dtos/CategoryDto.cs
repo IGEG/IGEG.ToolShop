@@ -1,5 +1,4 @@
-﻿
-namespace IGEG.ToolShop.Application.Features.Category.Queries.GetAllCategories
+﻿namespace IGEG.ToolShop.Application.Dtos
 {
     public class CategoryDto
     {

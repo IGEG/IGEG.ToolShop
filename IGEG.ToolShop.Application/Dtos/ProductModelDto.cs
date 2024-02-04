@@ -1,7 +1,4 @@
-﻿using IGEG.ToolShop.Application.Features.Product.Queries.GetAllProducts;
-using IGEG.ToolShop.Application.Features.ProductOption.Queries.GetAllProductOptions;
-
-namespace IGEG.ToolShop.Application.Features.ProductModel.Queries.GetAllProductModel
+﻿namespace IGEG.ToolShop.Application.Dtos
 {
     public class ProductModelDto
     {

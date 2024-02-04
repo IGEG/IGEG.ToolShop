@@ -1,4 +1,5 @@
-﻿using MediatR;
+﻿using IGEG.ToolShop.Application.Dtos;
+using MediatR;
 
 namespace IGEG.ToolShop.Application.Features.Product.Queries.GetAllProducts
 {
