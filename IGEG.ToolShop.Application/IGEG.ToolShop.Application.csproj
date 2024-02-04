@@ -17,12 +17,10 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Features\Category\Commands\" />
     <Folder Include="Features\ProductModel\Commands\" />
     <Folder Include="Features\ProductModel\Queries\GetAllProductModel\" />
     <Folder Include="Features\ProductOption\Commands\" />
     <Folder Include="Features\ProductOption\Queries\GetAllProductOptions\" />
-    <Folder Include="Features\Product\Commands\" />
   </ItemGroup>
 
 </Project>
