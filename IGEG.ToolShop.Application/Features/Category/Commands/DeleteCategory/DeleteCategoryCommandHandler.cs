@@ -1,4 +1,5 @@
 ﻿using IGEG.ToolShop.Application.Contracts.Percistance;
+using IGEG.ToolShop.Application.Exceptions;
 using MediatR;
 
 namespace IGEG.ToolShop.Application.Features.Category.Commands.DeleteCategory
@@ -14,6 +15,9 @@ namespace IGEG.ToolShop.Application.Features.Category.Commands.DeleteCategory
         public async Task<Unit> Handle(DeleteCategoryCommand request, CancellationToken cancellationToken)
         {
             var category = await _repository.GetByIdAsync(request.Id);
+
+            if (category == null)
+                throw new NotFoundException(nameof(Category), request.Id);
 
             await _repository.DeleteAsync(category);
 

@@ -1,4 +1,5 @@
 ﻿using IGEG.ToolShop.Application.Contracts.Percistance;
+using IGEG.ToolShop.Application.Exceptions;
 using MediatR;
 
 namespace IGEG.ToolShop.Application.Features.Product.Commands.DeleteProduct
@@ -15,6 +16,9 @@ namespace IGEG.ToolShop.Application.Features.Product.Commands.DeleteProduct
         public async Task<Unit> Handle(DeleteProductCommand request, CancellationToken cancellationToken)
         {
             var product = await _repository.GetByIdAsync(request.Id);
+
+            if (product == null)
+                throw new NotFoundException(nameof(Product), request.Id);
 
             await _repository.DeleteAsync(product);
 
