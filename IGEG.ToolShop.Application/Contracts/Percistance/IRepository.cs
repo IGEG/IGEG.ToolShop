@@ -7,6 +7,6 @@ namespace IGEG.ToolShop.Application.Contracts.Percistance
         Task<T> GetByIdAsync(int Id);
         Task CreateAsync(T entity);
         Task UpdateAsync(T entity);
-        Task DeleteAsync(int Id);
+        Task DeleteAsync(T entity);
     }
 }
