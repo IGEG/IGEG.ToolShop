@@ -16,7 +16,7 @@ namespace IGEG.ToolShop.Application.Features.Category.Commands.CreateCategory
         }
         public async Task<int> Handle(CreateCategoryCommand request, CancellationToken cancellationToken)
         {
-            var category = _mapper.Map<Domain.Entities.Category>(request.CategoryDto);
+            var category = _mapper.Map<Domain.Entities.Category>(request.i);
             await _repository.CreateAsync(category);
             return category.Id;
         }
