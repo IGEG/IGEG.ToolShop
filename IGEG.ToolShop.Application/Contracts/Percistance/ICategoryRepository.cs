@@ -1,5 +1,5 @@
 ﻿
-using IGEG.ToolShop.Domain.Entities;
+using IGEG.ToolShop.Domain.Models;
 
 namespace IGEG.ToolShop.Application.Contracts.Percistance
 {

@@ -1,14 +1,14 @@
 ﻿using IGEG.ToolShop.Domain.Common;
 using System.ComponentModel.DataAnnotations.Schema;
 
-namespace IGEG.ToolShop.Domain.Entities
+namespace IGEG.ToolShop.Domain.Models
 {
     public class Product : BaseEntity
     {
         public string? SmallDescription { get; set; }
         public string? BigDescription { get; set; }
         public string? Images { get; set; }
-        public string URL { get; set; }
+        public string? URL { get; set; }
 
         [Column(TypeName = "Decimal(10,2)")]
         public decimal? SpesialPrice { get; set; }

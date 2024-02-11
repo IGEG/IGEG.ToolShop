@@ -23,7 +23,7 @@ namespace IGEG.ToolShop.Application.Features.Category.Commands.CreateCategory
             if (!validResult.IsValid)
                 throw new BadRequestException($"Invalid {nameof(CreateCategoryCommand)}", validResult);
 
-            var category = _mapper.Map<Domain.Entities.Category>(request);
+            var category = _mapper.Map<Domain.Models.Category>(request);
 
             await _repository.CreateAsync(category);
             return category.Id;

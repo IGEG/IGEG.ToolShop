@@ -23,7 +23,7 @@ namespace IGEG.ToolShop.Application.Features.Product.Commands.CreateProduct
             if (!validResult.IsValid)
                 throw new BadRequestException($"Invalid {nameof(CreateProductCommand)}", validResult);
 
-            var product = _mapper.Map<Domain.Entities.Product>(request);
+            var product = _mapper.Map<Domain.Models.Product>(request);
 
             await _repository.CreateAsync(product);
 

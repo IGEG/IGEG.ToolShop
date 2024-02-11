@@ -5,6 +5,6 @@ namespace IGEG.ToolShop.Application.Features.Category.Commands.UpdateCategory
 {
     public record UpdateCategoryCommand : IRequest<Unit>
     {
-        public CategoryDto CategoryDto { get; set; }
+        public CategoryDto? CategoryDto { get; set; }
     }
 }

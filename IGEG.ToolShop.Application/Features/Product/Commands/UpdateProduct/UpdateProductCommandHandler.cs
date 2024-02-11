@@ -16,7 +16,7 @@ namespace IGEG.ToolShop.Application.Features.Product.Commands.UpdateProduct
         }
         public async Task<Unit> Handle(UpdateProductCommand request, CancellationToken cancellationToken)
         {
-            var product = _mapper.Map<Domain.Entities.Product>(request.ProductDto);
+            var product = _mapper.Map<Domain.Models.Product>(request.ProductDto);
 
             await _repository.UpdateAsync(product);
 

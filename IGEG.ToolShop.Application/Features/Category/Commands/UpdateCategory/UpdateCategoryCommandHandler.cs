@@ -16,7 +16,7 @@ namespace IGEG.ToolShop.Application.Features.Category.Commands.UpdateCategory
         }
         public async Task<Unit> Handle(UpdateCategoryCommand request, CancellationToken cancellationToken)
         {
-            var category = _mapper.Map<Domain.Entities.Category>(request.CategoryDto);
+            var category = _mapper.Map<Domain.Models.Category>(request.CategoryDto);
 
             await _repository.UpdateAsync(category);
 

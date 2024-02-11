@@ -3,12 +3,12 @@
     public class ProductDto
     {
         public int Id { get; set; }
-        public string Name { get; set; }
-        public string SmallDescription { get; set; }
-        public string BigDescription { get; set; }
-        public string Images { get; set; }
-        public string URL { get; set; }
-        public decimal? SpesialPrice { get; set; }
+        public string? Name { get; set; }
+        public string? SmallDescription { get; set; }
+        public string? BigDescription { get; set; }
+        public string? Images { get; set; }
+        public string? URL { get; set; }
+        public decimal SpesialPrice { get; set; }
         public int CategoryId { get; set; }
         public CategoryDto? Category { get; set; }
         public int? Volume { get; set; }
