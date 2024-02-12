@@ -3,11 +3,6 @@ using IGEG.ToolShop.Domain.Models;
 using IGEG.ToolShop.Persistance.DataContext;
 using IGEG.ToolShop.Persistance.Repositories.Common;
 using Microsoft.EntityFrameworkCore;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace IGEG.ToolShop.Persistance.Repositories
 {
@@ -24,7 +19,7 @@ namespace IGEG.ToolShop.Persistance.Repositories
 
         public async Task<Category> GetCategoryByUrlAsync(string url)
         {
-            return await _context.Categories.Where(x => x.Url == url).FirstOrDefaultAsync();
+            return await _context.Categories.FirstOrDefaultAsync(x => x.Url.ToLower().Equals(url.ToLower()));
         }
     }
 }
