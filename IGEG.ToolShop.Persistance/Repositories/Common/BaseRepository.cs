@@ -1,10 +1,11 @@
 ﻿using IGEG.ToolShop.Application.Contracts.Percistance;
+using IGEG.ToolShop.Domain.Common;
 using IGEG.ToolShop.Persistance.DataContext;
 using Microsoft.EntityFrameworkCore;
 
 namespace IGEG.ToolShop.Persistance.Repositories.Common
 {
-    public class BaseRepository<T> : IRepository<T> where T : class
+    public class BaseRepository<T> : IRepository<T> where T : BaseEntity
     {
         protected readonly DataBaseContext _context;
 
@@ -25,12 +26,13 @@ namespace IGEG.ToolShop.Persistance.Repositories.Common
 
         public async Task<IReadOnlyList<T>> GetAllAsync()
         {
-            return await _context.Set<T>().ToListAsync();
+            return await _context.Set<T>().AsNoTracking().ToListAsync();
         }
 
         public async Task<T> GetByIdAsync(int Id)
         {
-            return await _context.Set<T>().FindAsync(Id);
+            return await _context.Set<T>().AsNoTracking()
+                .FirstOrDefaultAsync(x => x.Id == Id);
         }
 
         public async Task UpdateAsync(T entity)
