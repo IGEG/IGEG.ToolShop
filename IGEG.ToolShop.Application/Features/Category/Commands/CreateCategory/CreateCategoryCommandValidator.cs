@@ -45,7 +45,7 @@ namespace IGEG.ToolShop.Application.Features.Category.Commands.CreateCategory
         }
 
         private async Task<bool> CheckCategoryNameIsUnique(CreateCategoryCommand command, CancellationToken token) =>
-            await _repository.CheckCategoryUnique(command.Name);
+            await _repository.CheckCategoryUnique(command.Name!);
 
     }
 }

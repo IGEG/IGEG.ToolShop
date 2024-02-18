@@ -5,7 +5,6 @@ namespace IGEG.ToolShop.Application.Features.Product.Commands.CreateProduct
 {
     public record CreateProductCommand : IRequest<int>
     {
-        public int Id { get; set; }
         public string? Name { get; set; }
         public string? SmallDescription { get; set; }
         public string? BigDescription { get; set; }
