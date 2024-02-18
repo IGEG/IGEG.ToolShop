@@ -34,9 +34,6 @@ namespace IGEG.ToolShop.Application.Features.Product.Commands.DeleteProduct
 
             await _repository.DeleteAsync(product);
 
-            _logger.LogInfo("The {0} whit id = {1} has been successfully deleted.",
-               nameof(Product), nameof(request.Id));
-
             return Unit.Value;
         }
     }

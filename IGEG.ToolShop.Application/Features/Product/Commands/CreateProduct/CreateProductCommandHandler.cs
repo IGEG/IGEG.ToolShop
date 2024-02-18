@@ -38,9 +38,6 @@ namespace IGEG.ToolShop.Application.Features.Product.Commands.CreateProduct
 
             await _repository.CreateAsync(product);
 
-            _logger.LogInfo("The {0} - {1} has been successfully created.",
-                 nameof(Product), nameof(request.Name));
-
             return product.Id;
         }
     }

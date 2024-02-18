@@ -25,8 +25,6 @@ namespace IGEG.ToolShop.Application.Features.Product.Queries.GetProductsByUrl
             var products = await _repository.GetProductsByUrlASync(request.productUrl);
             var productsDto = _mapper.Map<List<ProductDto>>(products);
 
-            _logger.LogInfo("The query {0} was executed successfully.", nameof(GetProductsByUrlQuery));
-
             return productsDto;
         }
     }

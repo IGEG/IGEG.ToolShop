@@ -39,9 +39,6 @@ namespace IGEG.ToolShop.Application.Features.Product.Commands.UpdateProduct
 
             await _repository.UpdateAsync(product);
 
-            _logger.LogInfo("The {0} - {1} has been successfully updated.",
-                nameof(Product), nameof(request.Name));
-
             return Unit.Value;
         }
     }

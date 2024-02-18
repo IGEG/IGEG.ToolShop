@@ -25,8 +25,6 @@ namespace IGEG.ToolShop.Application.Features.Category.Queries.GetCategoryByUrl
             var category = await _repository.GetCategoryByUrlAsync(request.url);
             var categoryDto = _mapper.Map<CategoryDto>(category);
 
-            _logger.LogInfo("The query {0} was executed successfully.", nameof(GetCategoryByUrlQuery));
-
             return categoryDto;
         }
     }

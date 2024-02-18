@@ -25,8 +25,6 @@ namespace IGEG.ToolShop.Application.Features.Product.Queries.GetAllProducts
             var products = await _repository.GetAllAsync();
             var ProductsDto = _mapper.Map<List<ProductDto>>(products);
 
-            _logger.LogInfo("The query {0} was executed successfully.", nameof(GetAllProductsQuery));
-
             return ProductsDto;
         }
     }

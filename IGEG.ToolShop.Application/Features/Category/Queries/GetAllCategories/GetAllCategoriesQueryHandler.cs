@@ -26,8 +26,6 @@ namespace IGEG.ToolShop.Application.Features.Category.Queries.GetAllCategories
             var categories = await _repository.GetAllAsync();
             var categoriesDto = _mapper.Map<List<CategoryDto>>(categories);
 
-            _logger.LogInfo("The query {0} was executed successfully.", nameof(GetAllCategoriesQuery));
-
             return categoriesDto;
         }
     }
