@@ -10,10 +10,10 @@ namespace IGEG.ToolShop.Persistance
 {
     public static class PersistanceServiceRegistration
     {
-        public static IServiceCollection AddServices(this IServiceCollection services, IConfiguration configuration)
+        public static IServiceCollection AddPersistanceServices(this IServiceCollection services, IConfiguration configuration)
         {
             services.AddDbContext<DataBaseContext>(options =>
-            options.UseNpgsql(configuration.GetConnectionString("AbbDBcontext")));
+            options.UseNpgsql(configuration.GetConnectionString("AppDBcontext")));
 
             services.AddScoped(typeof(IRepository<>), typeof(BaseRepository<>));
             services.AddScoped<IProductRepository, ProductRepository>();
