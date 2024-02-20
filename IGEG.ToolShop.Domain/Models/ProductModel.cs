@@ -7,6 +7,7 @@ namespace IGEG.ToolShop.Domain.Models
 {
     public class ProductModel : BaseEntity
     {
+        public int ProductId { get; set; }
         [JsonIgnore]
         public Product? Product { get; set; }
         public int ProductOptionId { get; set; }

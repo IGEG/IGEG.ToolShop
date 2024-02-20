@@ -11,7 +11,7 @@ namespace IGEG.ToolShop.Persistance.DataContext
                 
         }
 
-        public DbSet<Product> Products { get; set; }       
+        public DbSet<Product> Products { get; set; }
         public DbSet<Category> Categories { get; set; }
         public DbSet<ProductOption> ProductOptions { get; set; }
         public DbSet<State> States { get; set; }
@@ -22,13 +22,22 @@ namespace IGEG.ToolShop.Persistance.DataContext
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.ApplyConfigurationsFromAssembly(typeof(DataBaseContext).Assembly);
-            modelBuilder.ApplyConfiguration(new ProductModelConfiguration());
-            modelBuilder.ApplyConfiguration(new SolventConfiguration());
-            modelBuilder.ApplyConfiguration(new WorkConfiguration());
-            modelBuilder.ApplyConfiguration(new CategoryConfiguration());
-            modelBuilder.ApplyConfiguration(new ProductConfiguration());
-            modelBuilder.ApplyConfiguration(new ProductOptionConfiguration());
-            modelBuilder.ApplyConfiguration(new NewsConfiguration());
+            //modelBuilder.ApplyConfiguration(new SolventConfiguration());
+            //modelBuilder.ApplyConfiguration(new WorkConfiguration());
+            //modelBuilder.ApplyConfiguration(new CategoryConfiguration());
+            //modelBuilder.ApplyConfiguration(new ProductConfiguration());
+            //modelBuilder.ApplyConfiguration(new ProductOptionConfiguration());
+            //modelBuilder.ApplyConfiguration(new ProductModelConfiguration());
+            //modelBuilder.ApplyConfiguration(new NewsConfiguration());
+
+            var dateTimeProperties = modelBuilder.Model.GetEntityTypes()
+                 .SelectMany(t => t.GetProperties())
+                 .Where(p => p.ClrType == typeof(DateTime) || p.ClrType == typeof(DateTime?));
+
+            foreach (var property in dateTimeProperties)
+            {
+                property.SetColumnType("timestamp without time zone");
+            }
 
             base.OnModelCreating(modelBuilder);
         }
