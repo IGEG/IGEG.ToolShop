@@ -66,6 +66,10 @@ artifacts/
 # ASP.NET Scaffolding
 ScaffoldingReadMe.txt
 
+# Ignore all files with the specified extension.
+# Scope is all repo folders.
+*.json
+
 # StyleCop
 StyleCopReport.xml
 
