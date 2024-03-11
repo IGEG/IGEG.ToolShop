@@ -20,7 +20,7 @@
   <ItemGroup>
     <ProjectReference Include="..\IGEG.ToolShop.Application\IGEG.ToolShop.Application.csproj" />
     <ProjectReference Include="..\IGEG.ToolShop.Infrastructure\IGEG.ToolShop.Infrastructure.csproj" />
-    <ProjectReference Include="..\IGEG.ToolShop.Persistance\IGEG.ToolShop.Persistance.csproj" />
+    <ProjectReference Include="..\IGEG.ToolShop.Persistance\IGEG.ToolShop.Persistence.csproj" />
   </ItemGroup>
 
 </Project>

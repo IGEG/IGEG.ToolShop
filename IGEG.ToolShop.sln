@@ -19,13 +19,15 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IGEG.ToolShop.Application",
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IGEG.ToolShop.Domain", "IGEG.ToolShop.Domain\IGEG.ToolShop.Domain.csproj", "{8FE9D31E-58EB-47B3-9F76-5567620C0E34}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IGEG.ToolShop.Persistance", "IGEG.ToolShop.Persistance\IGEG.ToolShop.Persistance.csproj", "{E53F0F14-2174-4F3D-B371-C663F9BD7A46}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IGEG.ToolShop.Persistence", "IGEG.ToolShop.Persistance\IGEG.ToolShop.Persistence.csproj", "{E53F0F14-2174-4F3D-B371-C663F9BD7A46}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IGEG.ToolShop.Infrastructure", "IGEG.ToolShop.Infrastructure\IGEG.ToolShop.Infrastructure.csproj", "{FC18D6C5-0229-4D66-8490-ED62815BD6A1}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IGEG.ToolShop.WebAPI", "IGEG.ToolShop.WebAPI\IGEG.ToolShop.WebAPI.csproj", "{B2CF138F-E193-47E0-A9DA-C7AB8758B96E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IGEG.ToolShop.Application.UnitTests", "IGEG.ToolShop.Application.UnitTests\IGEG.ToolShop.Application.UnitTests.csproj", "{B62B8741-021A-4795-B605-C6F88B9D1A8C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IGEG.ToolShop.Application.UnitTests", "IGEG.ToolShop.Application.UnitTests\IGEG.ToolShop.Application.UnitTests.csproj", "{B62B8741-021A-4795-B605-C6F88B9D1A8C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IGEG.ToolShop.Persistence.IntegrationTests", "IGEG.ToolShop.Persistence.IntegrationTests\IGEG.ToolShop.Persistence.IntegrationTests.csproj", "{DA15F193-6113-47E2-B951-3FDF5CFDD5F3}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -57,6 +59,10 @@ Global
 		{B62B8741-021A-4795-B605-C6F88B9D1A8C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B62B8741-021A-4795-B605-C6F88B9D1A8C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B62B8741-021A-4795-B605-C6F88B9D1A8C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DA15F193-6113-47E2-B951-3FDF5CFDD5F3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DA15F193-6113-47E2-B951-3FDF5CFDD5F3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DA15F193-6113-47E2-B951-3FDF5CFDD5F3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DA15F193-6113-47E2-B951-3FDF5CFDD5F3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -72,6 +78,7 @@ Global
 		{FC18D6C5-0229-4D66-8490-ED62815BD6A1} = {DF89B8F0-EF84-4478-A7ED-D259EC15FC7C}
 		{B2CF138F-E193-47E0-A9DA-C7AB8758B96E} = {7DDFA7DC-B268-4F82-B9FF-DA9BAE690E6E}
 		{B62B8741-021A-4795-B605-C6F88B9D1A8C} = {C2B31038-FE20-4B00-A769-8CF88ADF9E9A}
+		{DA15F193-6113-47E2-B951-3FDF5CFDD5F3} = {C2B31038-FE20-4B00-A769-8CF88ADF9E9A}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {D0AE392E-1600-49B2-B5A5-AE5272C3ACB8}

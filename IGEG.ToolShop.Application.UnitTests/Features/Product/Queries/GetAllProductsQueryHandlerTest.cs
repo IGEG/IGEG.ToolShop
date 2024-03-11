@@ -33,6 +33,7 @@ namespace IGEG.ToolShop.Application.UnitTests.Features.Product.Queries
             var handler = new GetAllProductsQueryHandler(_mapper, _mockRepo.Object, _logger.Object);
             var result = await handler.Handle(new GetAllProductsQuery(), CancellationToken.None);
             result.ShouldBeOfType<List<ProductDto>>();
+            result.ShouldNotBeNull();
             result.Count.ShouldBe(3);
         }
     }
