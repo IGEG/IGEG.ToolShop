@@ -10,15 +10,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Compile Remove="Features\**" />
-    <Compile Remove="Models\**" />
-    <EmbeddedResource Remove="Features\**" />
-    <EmbeddedResource Remove="Models\**" />
-    <None Remove="Features\**" />
-    <None Remove="Models\**" />
-  </ItemGroup>
-
-  <ItemGroup>
     <PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.9.0" />
     <PackageReference Include="Moq" Version="4.20.70" />
     <PackageReference Include="Shouldly" Version="4.2.1" />
@@ -35,6 +26,13 @@
 
   <ItemGroup>
     <ProjectReference Include="..\IGEG.ToolShop.Application\IGEG.ToolShop.Application.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Features\Category\Commands\" />
+    <Folder Include="Features\Category\Queries\" />
+    <Folder Include="Features\Product\Commands\" />
+    <Folder Include="Models\" />
   </ItemGroup>
 
 </Project>
