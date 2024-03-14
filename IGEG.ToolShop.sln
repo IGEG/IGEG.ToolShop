@@ -27,7 +27,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IGEG.ToolShop.WebAPI", "IGE
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IGEG.ToolShop.Application.UnitTests", "IGEG.ToolShop.Application.UnitTests\IGEG.ToolShop.Application.UnitTests.csproj", "{B62B8741-021A-4795-B605-C6F88B9D1A8C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IGEG.ToolShop.Persistence.IntegrationTests", "IGEG.ToolShop.Persistence.IntegrationTests\IGEG.ToolShop.Persistence.IntegrationTests.csproj", "{DA15F193-6113-47E2-B951-3FDF5CFDD5F3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IGEG.ToolShop.Persistence.IntegrationTests", "IGEG.ToolShop.Persistence.IntegrationTests\IGEG.ToolShop.Persistence.IntegrationTests.csproj", "{DA15F193-6113-47E2-B951-3FDF5CFDD5F3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IGEG.ToolShop.BlazorUI", "IGEG.ToolShop.BlazorUI\IGEG.ToolShop.BlazorUI.csproj", "{15732346-9741-4C1A-9ED7-8A7A3E5DE232}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -63,6 +65,10 @@ Global
 		{DA15F193-6113-47E2-B951-3FDF5CFDD5F3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DA15F193-6113-47E2-B951-3FDF5CFDD5F3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DA15F193-6113-47E2-B951-3FDF5CFDD5F3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{15732346-9741-4C1A-9ED7-8A7A3E5DE232}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{15732346-9741-4C1A-9ED7-8A7A3E5DE232}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{15732346-9741-4C1A-9ED7-8A7A3E5DE232}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{15732346-9741-4C1A-9ED7-8A7A3E5DE232}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -79,6 +85,7 @@ Global
 		{B2CF138F-E193-47E0-A9DA-C7AB8758B96E} = {7DDFA7DC-B268-4F82-B9FF-DA9BAE690E6E}
 		{B62B8741-021A-4795-B605-C6F88B9D1A8C} = {C2B31038-FE20-4B00-A769-8CF88ADF9E9A}
 		{DA15F193-6113-47E2-B951-3FDF5CFDD5F3} = {C2B31038-FE20-4B00-A769-8CF88ADF9E9A}
+		{15732346-9741-4C1A-9ED7-8A7A3E5DE232} = {2CF20C76-786D-4984-8E7B-29B5D939F6E4}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {D0AE392E-1600-49B2-B5A5-AE5272C3ACB8}
